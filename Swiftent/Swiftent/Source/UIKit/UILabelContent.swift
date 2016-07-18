@@ -11,5 +11,9 @@ import UIKit
 
 public struct UILabelContent {
     let text : Text
+
+    public init(text : Text) {
+        self.text = text
+    }
 }
 #endif

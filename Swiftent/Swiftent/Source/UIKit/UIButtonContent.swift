@@ -14,9 +14,20 @@ public struct UIButtonContent {
     let highlighted : UIButtonStateContent?
     let disabled : UIButtonStateContent?
     let selected : UIButtonStateContent?
+
+    public init(normal: UIButtonStateContent?,
+                highlighted: UIButtonStateContent?,
+                disabled: UIButtonStateContent?,
+                selected: UIButtonStateContent?) {
+        
+        self.normal = normal
+        self.highlighted = highlighted
+        self.disabled = disabled
+        self.selected = selected
+    }
 }
 
-struct UIButtonStateContent {
+public struct UIButtonStateContent {
     let text : Text
     let image : UIImage?
 }
