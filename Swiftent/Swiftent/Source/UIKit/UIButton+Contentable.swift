@@ -10,11 +10,11 @@
 import UIKit
 
 extension UIButton : Contentable {
-    public func installContent(content: UIButtonContentComposition) {
+    public func installContent(content: UIButtonContent) {
         let c = content
 
         let states : [UIControlState] = [.Normal, .Disabled, .Highlighted, .Selected]
-        let vals : [UIButtonContent?] = [c.normal, c.disabled, c.highlighted, c.selected]
+        let vals : [UIButtonStateContent?] = [c.normal, c.disabled, c.highlighted, c.selected]
 
         for (val, state) in zip(vals, states) {
             if let value = val {

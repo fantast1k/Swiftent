@@ -9,14 +9,14 @@
 #if os(iOS)
 import Foundation
 
-public struct UIButtonContentComposition {
-    let normal : UIButtonContent?
-    let highlighted : UIButtonContent?
-    let disabled : UIButtonContent?
-    let selected : UIButtonContent?
+public struct UIButtonContent {
+    let normal : UIButtonStateContent?
+    let highlighted : UIButtonStateContent?
+    let disabled : UIButtonStateContent?
+    let selected : UIButtonStateContent?
 }
 
-struct UIButtonContent {
+struct UIButtonStateContent {
     let text : Text
     let image : UIImage?
 }
