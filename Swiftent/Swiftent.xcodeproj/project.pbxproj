@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		12E86FF21D3C245C00ADAB52 /* Swiftent.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E86FF11D3C245C00ADAB52 /* Swiftent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12E86FFB1D3C24AC00ADAB52 /* Contentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E86FFA1D3C24AC00ADAB52 /* Contentable.swift */; };
+		12E86FFE1D3CD23700ADAB52 /* UILabel+Contentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E86FFD1D3CD23700ADAB52 /* UILabel+Contentable.swift */; };
+		12E870001D3CD29800ADAB52 /* UILabelContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E86FFF1D3CD29800ADAB52 /* UILabelContent.swift */; };
+		12E870021D3CD2A300ADAB52 /* UIButton+Contentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E870011D3CD2A300ADAB52 /* UIButton+Contentable.swift */; };
+		12E870041D3CD2CB00ADAB52 /* UIButtonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E870031D3CD2CB00ADAB52 /* UIButtonContent.swift */; };
+		12E870071D3CE1E300ADAB52 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E870061D3CE1E300ADAB52 /* Text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +21,11 @@
 		12E86FF11D3C245C00ADAB52 /* Swiftent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swiftent.h; sourceTree = "<group>"; };
 		12E86FF31D3C245C00ADAB52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E86FFA1D3C24AC00ADAB52 /* Contentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contentable.swift; sourceTree = "<group>"; };
+		12E86FFD1D3CD23700ADAB52 /* UILabel+Contentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Contentable.swift"; sourceTree = "<group>"; };
+		12E86FFF1D3CD29800ADAB52 /* UILabelContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelContent.swift; sourceTree = "<group>"; };
+		12E870011D3CD2A300ADAB52 /* UIButton+Contentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Contentable.swift"; sourceTree = "<group>"; };
+		12E870031D3CD2CB00ADAB52 /* UIButtonContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonContent.swift; sourceTree = "<group>"; };
+		12E870061D3CE1E300ADAB52 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,30 @@
 		12E86FF91D3C247A00ADAB52 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				12E870051D3CE1DD00ADAB52 /* Common */,
+				12E86FFC1D3CD21500ADAB52 /* UIKit */,
 				12E86FFA1D3C24AC00ADAB52 /* Contentable.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		12E86FFC1D3CD21500ADAB52 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				12E86FFD1D3CD23700ADAB52 /* UILabel+Contentable.swift */,
+				12E86FFF1D3CD29800ADAB52 /* UILabelContent.swift */,
+				12E870011D3CD2A300ADAB52 /* UIButton+Contentable.swift */,
+				12E870031D3CD2CB00ADAB52 /* UIButtonContent.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		12E870051D3CE1DD00ADAB52 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				12E870061D3CE1E300ADAB52 /* Text.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +172,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E86FFE1D3CD23700ADAB52 /* UILabel+Contentable.swift in Sources */,
+				12E870041D3CD2CB00ADAB52 /* UIButtonContent.swift in Sources */,
+				12E870001D3CD29800ADAB52 /* UILabelContent.swift in Sources */,
 				12E86FFB1D3C24AC00ADAB52 /* Contentable.swift in Sources */,
+				12E870071D3CE1E300ADAB52 /* Text.swift in Sources */,
+				12E870021D3CD2A300ADAB52 /* UIButton+Contentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
