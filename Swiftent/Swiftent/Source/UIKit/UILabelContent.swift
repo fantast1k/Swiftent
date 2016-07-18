@@ -15,5 +15,7 @@ public struct UILabelContent {
     public init(text : Text) {
         self.text = text
     }
+
+    public static let None = UILabelContent(text: Text.Raw(nil))
 }
 #endif

@@ -49,6 +49,18 @@ public struct UIButtonStateContent {
         self.text = text
         self.image = image
     }
+
+    public init(text: Text) {
+        self.text = text
+        self.image = nil
+    }
+
+    public init(image: UIImage?) {
+        self.text = Text.Raw(nil)
+        self.image = image
+    }
+
+    public static let None = UIButtonStateContent(text: Text.Raw(nil), image: nil)
 }
 
 #endif
