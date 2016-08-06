@@ -6,7 +6,6 @@
 //  Copyright © 2016 Fantastik Solution. All rights reserved.
 //
 
-#if os(iOS)
 import Foundation
 
 public struct UIButtonContent {
@@ -62,5 +61,3 @@ public struct UIButtonStateContent {
 
     public static let None = UIButtonStateContent(text: Text.Raw(nil), image: nil)
 }
-
-#endif

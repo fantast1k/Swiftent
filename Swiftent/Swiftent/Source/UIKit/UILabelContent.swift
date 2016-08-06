@@ -6,7 +6,6 @@
 //  Copyright © 2016 Fantastik Solution. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
 public struct UILabelContent {
@@ -18,4 +17,3 @@ public struct UILabelContent {
 
     public static let None = UILabelContent(text: Text.Raw(nil))
 }
-#endif

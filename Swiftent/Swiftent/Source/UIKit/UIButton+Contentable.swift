@@ -6,7 +6,6 @@
 //  Copyright © 2016 Fantastik Solution. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
 extension UIButton : Contentable {
@@ -30,4 +29,3 @@ extension UIButton : Contentable {
         }
     }
 }
-#endif

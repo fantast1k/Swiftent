@@ -6,7 +6,6 @@
 //  Copyright © 2016 Fantastik Solution. All rights reserved.
 //
 
-#if os(iOS)
 import UIKit
 
 extension UILabel : Contentable {
@@ -22,4 +21,3 @@ extension UILabel : Contentable {
         }
     }
 }
-#endif

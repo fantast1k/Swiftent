@@ -11,4 +11,12 @@ import Foundation
 public enum Text {
     case Raw(String?)
     case Attributed(NSAttributedString?)
+
+    public init(val : String) {
+        self = .Raw(val)
+    }
+
+    public init(val : NSAttributedString) {
+        self = .Attributed(val)
+    }
 }
