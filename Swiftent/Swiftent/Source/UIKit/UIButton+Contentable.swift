@@ -18,16 +18,28 @@ extension UIButton : Contentable {
         for (val, state) in zip(vals, states) {
             if let value = val {
                 switch value.text {
-                case .Raw(let text):
-                    setTitle(text, forState: state)
-                case .Attributed(let text):
-                    setAttributedTitle(text, forState: state)
+                case .Raw(let txt):
+                    if let txt = txt {
+                        setTitle(txt, forState: state)
+                    }
+                case .Attributed(let txt):
+                    if let txt = txt {
+                        setAttributedTitle(txt, forState: state)
+                    }
                 }
 
-                setImage(value.image, forState: state)
-                setBackgroundImage(value.backgroundImage, forState: state)
-                setTitleColor(value.titleColor, forState: state)
-                setTitleShadowColor(value.titleShadowColor, forState: state)
+                if let image = value.image {
+                    setImage(image, forState: state)
+                }
+                if let backgroundImage = value.backgroundImage {
+                    setBackgroundImage(backgroundImage, forState: state)
+                }
+                if let titleColor = value.titleColor {
+                    setTitleColor(titleColor, forState: state)
+                }
+                if let titleShadowColor = value.titleShadowColor {
+                    setTitleShadowColor(titleShadowColor, forState: state)
+                }
             }
         }
     }

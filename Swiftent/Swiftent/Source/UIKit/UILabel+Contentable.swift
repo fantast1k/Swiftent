@@ -12,12 +12,14 @@ extension UILabel : Contentable {
 
     public func installContent(content: UILabelContent) {
         switch content.text {
-
-        case .Raw(let text):
-            self.text = text
-        case .Attributed(let text):
-            self.attributedText = text
-
+        case .Raw(let txt):
+            if let txt = txt {
+                self.text = txt
+            }
+        case .Attributed(let txt):
+            if let txt = txt {
+                self.attributedText = txt
+            }
         }
     }
 }

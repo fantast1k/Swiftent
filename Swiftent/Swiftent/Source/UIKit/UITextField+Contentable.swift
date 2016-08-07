@@ -14,18 +14,26 @@ extension UITextField : Contentable {
         if let text = content.text {
             switch text {
             case .Raw(let txt):
-                self.text = txt
+                if let txt = txt {
+                    self.text = txt
+                }
             case .Attributed(let txt):
-                self.attributedText = txt
+                if let txt = txt {
+                    self.attributedText = txt
+                }
             }
         }
 
         if let placeholder = content.placeholder {
             switch placeholder {
             case .Raw(let placeholder):
-                self.placeholder = placeholder
+                if let placeholder = placeholder {
+                    self.placeholder = placeholder
+                }
             case .Attributed(let placeholder):
-                self.attributedPlaceholder = placeholder
+                if let placeholder = placeholder {
+                    self.attributedPlaceholder = placeholder
+                }
             }
         }
     }
