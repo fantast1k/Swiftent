@@ -25,6 +25,9 @@ extension UIButton : Contentable {
                 }
 
                 setImage(value.image, forState: state)
+                setBackgroundImage(value.backgroundImage, forState: state)
+                setTitleColor(value.titleColor, forState: state)
+                setTitleShadowColor(value.titleShadowColor, forState: state)
             }
         }
     }

@@ -43,6 +43,9 @@ public struct UIButtonContent {
 public struct UIButtonStateContent {
     let text : Text
     let image : UIImage?
+    let titleColor : UIColor? = nil
+    let titleShadowColor : UIColor? = nil
+    let backgroundImage : UIImage? = nil
 
     public init(text: Text, image: UIImage?) {
         self.text = text
