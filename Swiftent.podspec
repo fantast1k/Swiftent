@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Swiftent"
-  s.version      = "0.0.8"
+  s.version      = "0.0.9"
   s.summary      = "Standartize your way of putting content into containers"
 
   s.description  = <<-DESC
