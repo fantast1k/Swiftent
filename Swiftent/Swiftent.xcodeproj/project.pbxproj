@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121DE33F1D704C3C00719C4F /* UITextViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121DE33E1D704C3C00719C4F /* UITextViewContent.swift */; };
+		121DE3411D704C6C00719C4F /* UITextView+Contentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121DE3401D704C6C00719C4F /* UITextView+Contentable.swift */; };
 		1246F92A1D64480300926125 /* UIImageViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1246F9291D64480300926125 /* UIImageViewContent.swift */; };
-		1246F92C1D6491CD00926125 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1246F92B1D6491CD00926125 /* UIImageView.swift */; };
+		1246F92C1D6491CD00926125 /* UIImageView+Contentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1246F92B1D6491CD00926125 /* UIImageView+Contentable.swift */; };
 		127468871D567902006B8823 /* UITextFieldContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127468861D567902006B8823 /* UITextFieldContent.swift */; };
 		127468891D56790F006B8823 /* UITextField+Contentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127468881D56790F006B8823 /* UITextField+Contentable.swift */; };
 		12E86FF21D3C245C00ADAB52 /* Swiftent.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E86FF11D3C245C00ADAB52 /* Swiftent.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,8 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121DE33E1D704C3C00719C4F /* UITextViewContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewContent.swift; sourceTree = "<group>"; };
+		121DE3401D704C6C00719C4F /* UITextView+Contentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Contentable.swift"; sourceTree = "<group>"; };
 		1246F9291D64480300926125 /* UIImageViewContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewContent.swift; sourceTree = "<group>"; };
-		1246F92B1D6491CD00926125 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		1246F92B1D6491CD00926125 /* UIImageView+Contentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Contentable.swift"; sourceTree = "<group>"; };
 		127468861D567902006B8823 /* UITextFieldContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldContent.swift; sourceTree = "<group>"; };
 		127468881D56790F006B8823 /* UITextField+Contentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Contentable.swift"; sourceTree = "<group>"; };
 		12E86FEE1D3C245C00ADAB52 /* Swiftent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Swiftent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +97,9 @@
 				127468861D567902006B8823 /* UITextFieldContent.swift */,
 				127468881D56790F006B8823 /* UITextField+Contentable.swift */,
 				1246F9291D64480300926125 /* UIImageViewContent.swift */,
-				1246F92B1D6491CD00926125 /* UIImageView.swift */,
+				1246F92B1D6491CD00926125 /* UIImageView+Contentable.swift */,
+				121DE33E1D704C3C00719C4F /* UITextViewContent.swift */,
+				121DE3401D704C6C00719C4F /* UITextView+Contentable.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -185,12 +191,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E86FFE1D3CD23700ADAB52 /* UILabel+Contentable.swift in Sources */,
+				121DE33F1D704C3C00719C4F /* UITextViewContent.swift in Sources */,
 				127468891D56790F006B8823 /* UITextField+Contentable.swift in Sources */,
 				1246F92A1D64480300926125 /* UIImageViewContent.swift in Sources */,
 				12E870041D3CD2CB00ADAB52 /* UIButtonContent.swift in Sources */,
 				12E870001D3CD29800ADAB52 /* UILabelContent.swift in Sources */,
 				127468871D567902006B8823 /* UITextFieldContent.swift in Sources */,
-				1246F92C1D6491CD00926125 /* UIImageView.swift in Sources */,
+				121DE3411D704C6C00719C4F /* UITextView+Contentable.swift in Sources */,
+				1246F92C1D6491CD00926125 /* UIImageView+Contentable.swift in Sources */,
 				12E86FFB1D3C24AC00ADAB52 /* Contentable.swift in Sources */,
 				12E870071D3CE1E300ADAB52 /* Text.swift in Sources */,
 				12E870021D3CD2A300ADAB52 /* UIButton+Contentable.swift in Sources */,
