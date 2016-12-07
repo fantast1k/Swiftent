@@ -10,7 +10,9 @@ import Foundation
 
 
 extension UIImageView : Contentable {
-    public func installContent(content: UIImageViewContent) {
+    public typealias Content = UIImageViewContent
+
+    public func installContent(_ content: UIImageViewContent) {
         if let img = content.image {
             image = img
         }

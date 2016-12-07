@@ -11,16 +11,13 @@ import Foundation
 
 public protocol Contentable {
     associatedtype Content
-    func installContent(content: Content) -> Void
+    func installContent(_ content: Content) -> Void
 }
 
 
-infix operator <=== {
-    associativity left
-    precedence 250
-}
+infix operator <=== : MultiplicationPrecedence
 
 
-public func <=== <E : Contentable, C where C == E.Content> (lhs : E, rhs : C) {
+public func <=== <E : Contentable, C> (lhs : E, rhs : C) where C == E.Content {
     lhs.installContent(rhs)
 }

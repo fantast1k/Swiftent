@@ -9,10 +9,11 @@
 import UIKit
 
 extension UIButton : Contentable {
-    public func installContent(content: UIButtonContent) {
+    public typealias Content = UIButtonContent
+    public func installContent(_ content: UIButtonContent) {
         let c = content
 
-        let states : [UIControlState] = [.Normal, .Disabled, .Highlighted, .Selected]
+        let states : [UIControlState] = [.normal, .disabled, .highlighted, .selected]
         let vals : [UIButtonStateContent?] = [c.normal, c.disabled, c.highlighted, c.selected]
 
         for (val, state) in zip(vals, states) {
@@ -20,25 +21,25 @@ extension UIButton : Contentable {
                 switch value.text {
                 case .Raw(let txt):
                     if let txt = txt {
-                        setTitle(txt, forState: state)
+                        setTitle(txt, for: state)
                     }
                 case .Attributed(let txt):
                     if let txt = txt {
-                        setAttributedTitle(txt, forState: state)
+                        setAttributedTitle(txt, for: state)
                     }
                 }
 
                 if let image = value.image {
-                    setImage(image, forState: state)
+                    setImage(image, for: state)
                 }
                 if let backgroundImage = value.backgroundImage {
-                    setBackgroundImage(backgroundImage, forState: state)
+                    setBackgroundImage(backgroundImage, for: state)
                 }
                 if let titleColor = value.titleColor {
-                    setTitleColor(titleColor, forState: state)
+                    setTitleColor(titleColor, for: state)
                 }
                 if let titleShadowColor = value.titleShadowColor {
-                    setTitleShadowColor(titleShadowColor, forState: state)
+                    setTitleShadowColor(titleShadowColor, for: state)
                 }
             }
         }

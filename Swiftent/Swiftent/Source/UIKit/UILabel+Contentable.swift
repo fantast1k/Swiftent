@@ -9,8 +9,9 @@
 import UIKit
 
 extension UILabel : Contentable {
+    public typealias Content = UILabelContent
 
-    public func installContent(content: UILabelContent) {
+    public func installContent(_ content: UILabelContent) {
         switch content.text {
         case .Raw(let txt):
             if let txt = txt {

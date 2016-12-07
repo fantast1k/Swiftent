@@ -10,7 +10,9 @@ import UIKit
 
 
 extension UITextField : Contentable {
-    public func installContent(content: UITextFieldContent) {
+    public typealias Content = UITextFieldContent
+
+    public func installContent(_ content: UITextFieldContent) {
         if let text = content.text {
             switch text {
             case .Raw(let txt):

@@ -10,8 +10,9 @@ import UIKit
 
 
 extension UITextView : Contentable {
+    public typealias Content = UITextViewContent
 
-    public func installContent(content: UITextViewContent) {
+    public func installContent(_ content: UITextViewContent) {
         switch content.text {
         case .Raw(let txt):
             if let txt = txt {
